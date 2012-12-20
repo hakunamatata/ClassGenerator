@@ -1,0 +1,28 @@
+d:\documents\visual studio 2010\Projects\ClassGenerate\ClassGenerate\obj\x86\Debug\ClassGenerate.Properties.Resources.resources
+d:\documents\visual studio 2010\Projects\ClassGenerate\ClassGenerate\obj\x86\Debug\ClassGenerate.csproj.GenerateResource.Cache
+d:\documents\visual studio 2010\Projects\ClassGenerate\ClassGenerate\bin\Debug\ClassGenerate.exe
+d:\documents\visual studio 2010\Projects\ClassGenerate\ClassGenerate\bin\Debug\ClassGenerate.pdb
+d:\documents\visual studio 2010\Projects\ClassGenerate\ClassGenerate\obj\x86\Debug\ClassGenerate.exe
+d:\documents\visual studio 2010\Projects\ClassGenerate\ClassGenerate\obj\x86\Debug\ClassGenerate.pdb
+d:\documents\visual studio 2010\Projects\ClassGenerate\ClassGenerate\obj\x86\Debug\ClassGenerate.FormDs.resources
+d:\documents\visual studio 2010\Projects\ClassGenerate\ClassGenerate\obj\x86\Debug\ClassGenerate.FormTb.resources
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\ClassGenerate\ClassGenerate\obj\x86\Debug\ClassGenerate.exe
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\ClassGenerate\ClassGenerate\obj\x86\Debug\ClassGenerate.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\ClassGenerate\ClassGenerate\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\ClassGenerate\ClassGenerate\obj\x86\Debug\ClassGenerate.FormDs.resources
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\ClassGenerate\ClassGenerate\obj\x86\Debug\ClassGenerate.Properties.Resources.resources
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\ClassGenerate\ClassGenerate\obj\x86\Debug\ClassGenerate.FormTb.resources
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\ClassGenerate\ClassGenerate\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\ClassGenerate\ClassGenerate\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\ClassGenerate\ClassGenerate\bin\Debug\ClassGenerate.exe
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\ClassGenerate\ClassGenerate\bin\Debug\ClassGenerate.pdb
+F:\ClassGenerate\ClassGenerate\obj\x86\Debug\ClassGenerate.exe
+F:\ClassGenerate\ClassGenerate\obj\x86\Debug\ClassGenerate.pdb
+F:\ClassGenerate\ClassGenerate\bin\Debug\ClassGenerate.exe
+F:\ClassGenerate\ClassGenerate\bin\Debug\ClassGenerate.pdb
+F:\ClassGenerate\ClassGenerate\obj\x86\Debug\ClassGenerate.FormDs.resources
+F:\ClassGenerate\ClassGenerate\obj\x86\Debug\ClassGenerate.Properties.Resources.resources
+F:\ClassGenerate\ClassGenerate\obj\x86\Debug\ClassGenerate.FormTb.resources
+F:\ClassGenerate\ClassGenerate\obj\x86\Debug\ClassGenerate.csproj.GenerateResource.Cache
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\ClassGenerate\ClassGenerate\obj\x86\Debug\ClassGenerate.FormMethod.resources
+F:\ClassGenerate\ClassGenerate\obj\x86\Debug\ClassGenerate.FormMethod.resources
