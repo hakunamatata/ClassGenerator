@@ -93,7 +93,7 @@ namespace ClassGenerate
                     tablename = checkedListBox1.GetItemText(checkedListBox1.Items[i]);
                     new_tp = new TabPage(tablename);
                     tb_out = new TextBox();
-                    tb_out.Text = a_class(tablename);
+                    tb_out.Text = a_class(tablename, radioButtonDal.Checked);
                     tb_out.Width = 545;
                     tb_out.Height = 480;
                     tb_out.Multiline = true;
@@ -103,6 +103,7 @@ namespace ClassGenerate
                     tcOutput.TabPages.Add(new_tp);
                 }
             }
+
         }
 
         private void clear_tabpages(TabControl tc)
@@ -114,7 +115,7 @@ namespace ClassGenerate
         }
 
 
-        private string a_class(string tablename)
+        private string a_class(string tablename, bool is_class)
         {
             try
             {
@@ -184,13 +185,38 @@ namespace ClassGenerate
                  */
 
                 string o = string.Empty;
+                if (is_class)
+                {
+                    write_class_head(ref o, tablename);
+                    write_insert_method(ref o, tablename, dt, 1);
+                    write_delete_method(ref o, tablename, dt, 1);
+                    write_update_method(ref o, tablename, dt, 1);
+                    write_get_method(ref o, tablename, dt, 1);
+                    write_end(ref o);
+                }
+                else
+                {
+                    write_model_head(ref o, tablename);
+                    for (int i = 0; i < dt.Rows.Count; i++)
+                    {
+                        DataRow dr = dt.Rows[i];
+                        append(ref o, "private " + data_type_convert(dr["datatype"].ToString()) + param_null_set(dr["datatype"].ToString(), dr["isnullable"].ToString()) + " _" + dr["columnname"].ToString() + ";", 1);
+                    }
 
-                write_class_head(ref o, tablename);
-                write_insert_method(ref o, tablename, dt, 1);
-                write_delete_method(ref o, tablename, dt, 1);
-                write_update_method(ref o, tablename, dt, 1);
-                write_get_method(ref o, tablename, dt, 1);
-                write_end(ref o);
+                    append(ref o, "");
+                    for (int i = 0; i < dt.Rows.Count; i++)
+                    {
+                        DataRow dr = dt.Rows[i];
+                        append(ref o, "public " + data_type_convert(dr["datatype"].ToString()) + param_null_set(dr["datatype"].ToString(), dr["isnullable"].ToString()) + " " + first_letter_uplower(dr["columnname"].ToString()), 1);
+                        append(ref o, "{", 1);
+                        append(ref o, "get{ return _" + dr["columnname"].ToString() + "; }", 2);
+                        append(ref o, "set{ _" + dr["columnname"].ToString() + " = value;  }", 2);
+                        append(ref o, "}", 1);
+
+                    }
+                    write_end(ref o);
+                }
+
 
                 return o;
             }
@@ -232,6 +258,21 @@ namespace ClassGenerate
             append(ref o, "}", 1);
             append(ref o, "");
             append(ref o, "#endregion", 1);
+            append(ref o, "");
+        }
+
+
+        private void write_model_head(ref string o, string tablename)
+        {
+            append(ref o, "using System;");
+            append(ref o, "using System.Collections.Generic;");
+            append(ref o, "using System.Linq;");
+            append(ref o, "using System.Text;");
+            append(ref o, "using System.Data.SqlClient;");
+            append(ref o, "using System.Data;");
+            append(ref o, "");
+            append(ref o, "public class " + tablename);
+            append(ref o, "{");
             append(ref o, "");
         }
 
@@ -562,7 +603,11 @@ namespace ClassGenerate
                 case "smallint":
                     return "int";
 
+                case "decimal":
+                    return "decimal";
 
+                case "uniqueidentifier":
+                    return "Guid";
                 default:
                     return null;
             }
@@ -854,6 +899,12 @@ namespace ClassGenerate
                 return "";
         }
 
+        private string first_letter_uplower(string s)
+        {
+            if (s.Length == 0) throw new Exception("字符串长度必须大于1");
+            if (s.Length == 1) return s.ToUpper();
+            else return s[0].ToString().ToUpper() + s.Substring(1);
+        }
     }
 }
 

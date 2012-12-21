@@ -25,7 +25,10 @@ namespace ClassGenerate
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            //textBoxServer.Text = "WIN-5H322N0A9II\\SQLEXPRESS";
+            checkBoxWindows.Checked = true;
+            //btnConnect_Click(new object(), new EventArgs());
+            panelUser.Enabled = !checkBoxWindows.Checked;
         }
 
         private void btnLogin_Click(object sender, EventArgs e)

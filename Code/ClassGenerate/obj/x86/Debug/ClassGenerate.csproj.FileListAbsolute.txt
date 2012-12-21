@@ -26,3 +26,14 @@ F:\ClassGenerate\ClassGenerate\obj\x86\Debug\ClassGenerate.FormTb.resources
 F:\ClassGenerate\ClassGenerate\obj\x86\Debug\ClassGenerate.csproj.GenerateResource.Cache
 C:\Users\Administrator\Documents\Visual Studio 2010\Projects\ClassGenerate\ClassGenerate\obj\x86\Debug\ClassGenerate.FormMethod.resources
 F:\ClassGenerate\ClassGenerate\obj\x86\Debug\ClassGenerate.FormMethod.resources
+C:\Users\Administrator\Documents\GitHub\ClassGenerator\Code\ClassGenerate\obj\x86\Debug\ClassGenerate.exe
+C:\Users\Administrator\Documents\GitHub\ClassGenerator\Code\ClassGenerate\obj\x86\Debug\ClassGenerate.pdb
+C:\Users\Administrator\Documents\GitHub\ClassGenerator\Code\ClassGenerate\bin\Debug\ClassGenerate.exe
+C:\Users\Administrator\Documents\GitHub\ClassGenerator\Code\ClassGenerate\bin\Debug\ClassGenerate.pdb
+C:\Users\Administrator\Documents\GitHub\ClassGenerator\Code\ClassGenerate\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\GitHub\ClassGenerator\Code\ClassGenerate\obj\x86\Debug\ClassGenerate.FormDs.resources
+C:\Users\Administrator\Documents\GitHub\ClassGenerator\Code\ClassGenerate\obj\x86\Debug\ClassGenerate.FormMethod.resources
+C:\Users\Administrator\Documents\GitHub\ClassGenerator\Code\ClassGenerate\obj\x86\Debug\ClassGenerate.Properties.Resources.resources
+C:\Users\Administrator\Documents\GitHub\ClassGenerator\Code\ClassGenerate\obj\x86\Debug\ClassGenerate.FormTb.resources
+C:\Users\Administrator\Documents\GitHub\ClassGenerator\Code\ClassGenerate\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrator\Documents\GitHub\ClassGenerator\Code\ClassGenerate\obj\x86\Debug\GenerateResource.write.1.tlog

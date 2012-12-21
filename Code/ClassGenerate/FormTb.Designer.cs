@@ -48,6 +48,8 @@
             this.btnGenerateMethod = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.tcOutput = new System.Windows.Forms.TabControl();
+            this.radioButtonModel = new System.Windows.Forms.RadioButton();
+            this.radioButtonDal = new System.Windows.Forms.RadioButton();
             this.tabControl1.SuspendLayout();
             this.tpSql.SuspendLayout();
             this.tpPdr.SuspendLayout();
@@ -206,6 +208,8 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.radioButtonDal);
+            this.panel1.Controls.Add(this.radioButtonModel);
             this.panel1.Controls.Add(this.btnGenerateClass);
             this.panel1.Controls.Add(this.checkedListBox1);
             this.panel1.Location = new System.Drawing.Point(12, 36);
@@ -219,7 +223,7 @@
             this.btnGenerateClass.Name = "btnGenerateClass";
             this.btnGenerateClass.Size = new System.Drawing.Size(75, 23);
             this.btnGenerateClass.TabIndex = 1;
-            this.btnGenerateClass.Text = "生成类";
+            this.btnGenerateClass.Text = "生成";
             this.btnGenerateClass.UseVisualStyleBackColor = true;
             this.btnGenerateClass.Click += new System.EventHandler(this.btnGenerateClass_Click);
             // 
@@ -260,6 +264,28 @@
             this.tcOutput.Size = new System.Drawing.Size(550, 490);
             this.tcOutput.TabIndex = 7;
             // 
+            // radioButtonModel
+            // 
+            this.radioButtonModel.AutoSize = true;
+            this.radioButtonModel.Location = new System.Drawing.Point(224, 179);
+            this.radioButtonModel.Name = "radioButtonModel";
+            this.radioButtonModel.Size = new System.Drawing.Size(53, 16);
+            this.radioButtonModel.TabIndex = 2;
+            this.radioButtonModel.Text = "Model";
+            this.radioButtonModel.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDal
+            // 
+            this.radioButtonDal.AutoSize = true;
+            this.radioButtonDal.Checked = true;
+            this.radioButtonDal.Location = new System.Drawing.Point(283, 179);
+            this.radioButtonDal.Name = "radioButtonDal";
+            this.radioButtonDal.Size = new System.Drawing.Size(41, 16);
+            this.radioButtonDal.TabIndex = 2;
+            this.radioButtonDal.TabStop = true;
+            this.radioButtonDal.Text = "Dal";
+            this.radioButtonDal.UseVisualStyleBackColor = true;
+            // 
             // FormTb
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -284,6 +310,7 @@
             this.tpPdr.ResumeLayout(false);
             this.tpPdr.PerformLayout();
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -312,5 +339,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox comboBoxReturnTypeProcedure;
+        private System.Windows.Forms.RadioButton radioButtonModel;
+        private System.Windows.Forms.RadioButton radioButtonDal;
     }
 }
