@@ -1,4 +1,4 @@
 ClassGenerator
 ==============
 
-类生成器
+ORM
